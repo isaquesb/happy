@@ -34,21 +34,27 @@ export default function Orphanage() {
 
       <main>
         <div className="orphanage-details">
-          <img src={row.images[activeImageIdx].url} alt={row.name} />
 
-          <div className="images">
-            {row.images.map((image, imageIdx) => {
-              return (
-                <button
-                  key={image.id}
-                  className={activeImageIdx === imageIdx ? 'active' : ''}
-                  type="button"
-                  onClick={() => { setActiveImageIdx(imageIdx) }}>
-                  <img src={image.url} alt={row.name} />
-                </button>
-              )
-            })}
-          </div>
+          {row.images.length && (
+            <div>
+              <img src={row.images[activeImageIdx].url} alt={row.name} />
+
+              <div className="images">
+                {row.images.map((image, imageIdx) => {
+                  return (
+                    <button
+                      key={image.id}
+                      className={activeImageIdx === imageIdx ? 'active' : ''}
+                      type="button"
+                      onClick={() => { setActiveImageIdx(imageIdx) }}>
+                      <img src={image.url} alt={row.name} />
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+          )}
+
 
           <div className="orphanage-details-content">
             <h1>{row.name}</h1>

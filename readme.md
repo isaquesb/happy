@@ -37,7 +37,7 @@ Project developed during the **[Next Level Week](https://nextlevelweek.com/)**
 
 ## 📝 License
 
-This project is under the MIT license. See the file [LICENSE](LICENSE.md) for details.
+This project is under the MIT license. See the file [LICENSE](LICENSE) for details.
 
 ---
 

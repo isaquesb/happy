@@ -12,5 +12,20 @@ export default {
         instructions: "Visiting instructions",
         yesWeekends: "We serve weekends",
         noWeekends: "We do not serve weekends",
+    },
+    orphanageCreate: {
+        data: "Data",
+        name: "Name",
+        about: "About",
+        characterLimits: "Max 300 characters",
+        photos: "Photos",
+        visiting: "Visiting",
+        instructions: "Instructions",
+        hours: "Hours",
+        weekends: "Open weekend",
+        yes: "Yes",
+        no: "No",
+        confirm: "Confirm",
+        saved: "Successful registration",
     }
 }
