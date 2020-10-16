@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'
 import { FiArrowRight } from 'react-icons/fi'
 import '../styles/pages/landing.css';
@@ -6,6 +7,7 @@ import '../styles/pages/landing.css';
 import logoImg from '../images/logo.svg';
 
 function Landing() {
+    const { t, } = useTranslation('landing');
     return (
         <div id="page-landing">
             <div className="content-wrapper">
@@ -13,8 +15,8 @@ function Landing() {
                 <img src={logoImg} alt="Happy" />
 
                 <main>
-                    <h1>Leve felicidade para o mundo</h1>
-                    <p>Visite orfanatos e mude o dia de muitas crianças.</p>
+                    <h1>{t('title')}</h1>
+                    <p>{t('subtitle')}</p>
                 </main>
 
                 <div className="location">
